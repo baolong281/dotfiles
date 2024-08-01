@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k": "editor::Hover",
+      // ctrl-tab
+      "ctrl-shift-tab": "pane::ActivatePrevItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      //menu vim
+      "J": "menu::SelectNext",
+      "K": "menu::SelectPrev"
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "K": "editor::ContextMenuPrev",
+      "J": "editor::ContextMenuNext"
+    }
+  }
+]
