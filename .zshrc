@@ -41,7 +41,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH=$PATH:/Users/dylanh/.spicetify
-export PATH=$PATH:/Users/dylanh/Library/Python/3.9/bin/
 export PATH=$PATH:~/Library/
 
 [[ -r ~/Repos/znap/znap.zsh ]] ||
@@ -60,7 +59,6 @@ compctl -K    _pyenv pyenv
 # `znap install` adds new commands and completions.
 znap install aureliojargas/clitest zsh-users/zsh-completions
 
-
 # bun completions
 [ -s "/Users/dylanh/.bun/_bun" ] && source "/Users/dylanh/.bun/_bun"
 
@@ -70,7 +68,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/dylanh/Projects/emsdk:$PATH"
 export PATH="/Users/dylanh/Projects/emsdk/upstream/emscripten:$PATH"
 export PATH="$HOME/go/bin:$PATH"
-export PYTHONPATH="$PYTHONPATH:."
 
 export CLICOLOR=1
 export LS_COLORS=RED
@@ -98,6 +95,8 @@ export PATH="$HOME/Toolchain/i686-elf/bin:$PATH"
 export PATH="$HOME/Toolchain/objconv:$PATH"
 export PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
 export PATH="/Applications/Alacritty.app/Contents/MacOS:$PATH"
+export PATH="$HOME/projects/ziglang/:$PATH"
+export PATH="$HOME/projects/zls/:$PATH"
 
 
 # >>> juliaup initialize >>>
@@ -108,3 +107,7 @@ path=('/Users/dylanh/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+
+. "$HOME/.cargo/env"
+
+alias vact='source .venv/bin/activate'
