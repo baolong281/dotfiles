@@ -1,0 +1,19 @@
+background = 181818
+foreground = d8d8d8
+
+cursor-color = d8d8d8
+cursor-text = 181818
+
+palette = 0=#181818
+palette = 9=#ab4642
+palette = 2=#a1b56c
+palette = 11=#f7ca88
+palette = 12=#7cafc2
+palette = 13=#ba8baf
+palette = 14=#86c1b9
+palette = 15=#d8d8d8
+
+font-family = "Hack Nerd Font Mono"
+font-family-bold = "Hack Nerd Font Mono Bold"
+font-family-bold-italic = "Hack Nerd Font Mono Italic"
+
